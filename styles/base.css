@@ -1,0 +1,19 @@
+body ,html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 75px;
+    display: table-row;
+    vertical-align: middle;
+}
+
+@media (min-width:768px){
+    body,html {
+        margin-left: 20%;
+    }
+    body{
+        
+    }
+}
