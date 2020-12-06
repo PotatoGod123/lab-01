@@ -1,0 +1,43 @@
+header{
+    height:73px;
+    width: 478px;
+    line-height: 73px;
+    border: black solid 1px;
+    background-color: lightgray;
+    display: inline-grid;
+    background-color: tomato;
+}
+footer{
+    width: 478px;
+    height: 73px;
+    background-color: lightgray;
+    border: black solid 1px;
+    border-top: 0px;
+    display: inline-grid;
+    background-color: teal;
+}
+section{
+    overflow: auto;
+    margin: auto;
+    background-color: lightgray;
+    background-color: springgreen;
+}
+
+@media (min-width:768px){
+    header{
+        width: 958px;
+        height: 98px;
+        line-height: 98px;
+        background-color: lightgray;
+    }
+    footer {
+        width: 758px;
+        height: 148px;
+        line-height: 148px;
+        background-color: lightgray;
+    }
+    section{
+        margin: initial;
+        background-color: gray;
+    }
+}
