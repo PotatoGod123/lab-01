@@ -1,3 +1,7 @@
+*{
+    border-style: border-box;
+}
+
 header{
     height:73px;
     width: 478px;
