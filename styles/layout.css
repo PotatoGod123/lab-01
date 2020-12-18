@@ -1,47 +1,55 @@
 *{
-    border-style: border-box;
+    box-sizing: border-box;
 }
-
-header{
-    height:73px;
-    width: 478px;
-    line-height: 73px;
-    border: black solid 1px;
-    background-color: lightgray;
-    display: inline-grid;
-    background-color: tomato;
-}
-footer{
-    width: 478px;
-    height: 73px;
-    background-color: lightgray;
-    border: black solid 1px;
-    border-top: 0px;
-    display: inline-grid;
-    background-color: teal;
-}
-section{
-    overflow: auto;
+main{
     margin: auto;
-    background-color: lightgray;
-    background-color: springgreen;
+    display: grid;
+    grid-template-columns:repeat(2, 240px) ;
+    grid-template-rows: 75px 150px repeat(2, 125px) repeat(2, 250px) 80px;
+    grid-template-areas: 
+    "a a"
+    "b b"
+    "c c"
+    "d d"
+    "e f"
+    "g h"
+    "i i";
 }
+@media (min-width:481px) and (max-width:1024px){
+    main{
+        margin: auto;
+        display: grid;
+        grid-template-columns:repeat(2, 450px) ;
+        grid-template-rows: 85px 160px repeat(2, 130px) repeat(2, 255px) 90px;
+        grid-template-areas: 
+        "a a"
+        "b b"
+        "c c"
+        "d d"
+        "e f"
+        "g h"
+        "i i";
+    }
+}
+ 
+@media (min-width:1025px){
+    *{
+        box-sizing: border-box;
+    }
+    main{
+        margin: auto;
+        margin-left: 20%;
+        margin-top: 12%;
+        display: grid;
+        grid-template-columns:200px repeat(4, 190px);
+        grid-template-rows:100px 200px 250px 150px;
+        grid-template-areas: 
+        "header header header header header"
+        "b c c d d"
+        "b e f g h"
+        "b i i i i";
+        
+    }
+    
 
-@media (min-width:768px){
-    header{
-        width: 958px;
-        height: 98px;
-        line-height: 98px;
-        background-color: lightgray;
-    }
-    footer {
-        width: 758px;
-        height: 148px;
-        line-height: 148px;
-        background-color: lightgray;
-    }
-    section{
-        margin: initial;
-        background-color: gray;
-    }
 }
