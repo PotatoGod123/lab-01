@@ -34,7 +34,7 @@ div{
     justify-content: center;
     align-items: center;
 }
-@media (min-width:480px) and (max-width:1024px){
+@media (min-width:760px) and (max-width:1024px){
     div{
         background-color: blanchedalmond;
     }
